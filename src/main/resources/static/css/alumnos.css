@@ -1,0 +1,31 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f6f9;
+}
+
+h1 {
+    color: #174d80;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #174d80;
+    color: white;
+}
+
+tr:hover {
+    background-color: #eef4fa;
+}

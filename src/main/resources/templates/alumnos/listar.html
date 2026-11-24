@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Alumnos</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/alumnos.css}">
+</head>
+
+<body>
+
+    <h1>Colegio Toribio Rodríguez de Mendoza</h1>
+
+    <h2>Listado de alumnos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="alumno : ${alumnos}">
+                <td th:text="${alumno.idAlumno}"></td>
+                <td th:text="${alumno.codigoAlumno}"></td>
+                <td th:text="${alumno.nombres}"></td>
+                <td th:text="${alumno.apellidos}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        Total de alumnos:
+        <span th:text="${#lists.size(alumnos)}"></span>
+    </p>
+
+</body>
+</html>

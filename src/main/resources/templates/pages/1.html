@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio - Colegio TRM</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
 </head>
 <body>
-    
+
+    <h1>Bienvenido al colegio</h1>
+
+    <h2 th:text="${colegio}">
+        Nombre del colegio
+    </h2>
+
+    <p>Sistema de Gestión Académica</p>
+
 </body>
 </html>
